@@ -1,0 +1,110 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  /* z-index: 1; */
+  color: #555;
+}
+
+/* 
+--- 01 TYPOGRAPHY SYSTEM
+font-family: Mulish and  sans-serif
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+- Letter spacing
+-0.5px
+0.75px
+
+
+--- 02 COLORS
+Brand-color: #3b7cde
+body font: #555
+others
+#234a85
+#2f63b2
+#3570c8
+--- 05 SHADOWS
+--- 06 BORDER-RADIUS
+--- 07 WHITESPACE
+
+*/
+
+/* ------------------------------------------------------ */
+/* REUSABLE DEC-BLOCKS */
+/* ------------------------------------------------------ */
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 9.6rem 0;
+}
+
+.golf {
+  display: grid;
+}
+
+.charlie--2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.charlie--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.charlie--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.charlie--5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.charlie--6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.heading-sec {
+  font-size: 6rem;
+  text-align: center;
+  /* padding: 2rem; */
+  font-weight: 300;
+}
+
+.heading-ter {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+.lists {
+  list-style: none;
+  line-height: 1.5rem;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.4rem rgba(93, 34, 230, 0.5);
+}
